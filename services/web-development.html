@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Services — Avology Technologies</title>
+<meta name="description" content="Custom web development — React, Next.js, Laravel, Node.js. High-performance websites and web applications built by Avology Technologies.">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="../assets/images/logo.png" type="image/png">
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-logo"><img src="../assets/images/logo.png" alt="Avology Technologies"></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../assets/images/logo.png" alt="Avology Technologies"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="../services.html">Services <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Services submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Services</div>
+          <a href="web-development.html"><div class="nav-dd-icon"><i class="fa-solid fa-code"></i></div><div class="nav-dd-text"><strong>Web Development</strong><span>React, Next.js, Laravel</span></div></a>
+          <a href="mobile-app.html"><div class="nav-dd-icon"><i class="fa-solid fa-mobile-screen"></i></div><div class="nav-dd-text"><strong>Mobile App</strong><span>iOS, Android, Flutter</span></div></a>
+          <a href="web-design.html"><div class="nav-dd-icon"><i class="fa-solid fa-pen-ruler"></i></div><div class="nav-dd-text"><strong>UI/UX Design</strong><span>Figma, Design Systems</span></div></a>
+          <a href="ecommerce.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>E-Commerce</strong><span>Shopify, WooCommerce</span></div></a>
+          <a href="seo.html"><div class="nav-dd-icon"><i class="fa-solid fa-chart-line"></i></div><div class="nav-dd-text"><strong>SEO &amp; Marketing</strong><span>Ads, SEO, Social</span></div></a>
+          <a href="branding.html"><div class="nav-dd-icon"><i class="fa-solid fa-palette"></i></div><div class="nav-dd-text"><strong>Branding</strong><span>Logo, Identity</span></div></a>
+          <a href="../services.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Services</strong><span>See everything we offer</span></div></a>
+        </div>
+      </li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li class="nav-dropdown">
+        <a href="../technologies.html">Technologies <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Technologies submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Technologies</div>
+          <a href="../technologies/react.html"><div class="nav-dd-icon"><i class="fa-brands fa-react icon-react"></i></div><div class="nav-dd-text"><strong>React / Next.js</strong><span>Frontend</span></div></a>
+          <a href="../technologies/nodejs.html"><div class="nav-dd-icon"><i class="fa-brands fa-node-js icon-node"></i></div><div class="nav-dd-text"><strong>Node.js</strong><span>Backend</span></div></a>
+          <a href="../technologies/flutter.html"><div class="nav-dd-icon"><i class="fa-solid fa-layer-group icon-flutter"></i></div><div class="nav-dd-text"><strong>Flutter</strong><span>Mobile</span></div></a>
+          <a href="../technologies/aws.html"><div class="nav-dd-icon"><i class="fa-brands fa-aws icon-aws"></i></div><div class="nav-dd-text"><strong>AWS / Cloud</strong><span>Hosting &amp; Infra</span></div></a>
+          <a href="../technologies.html" class="nav-dd-all-primary"><div class="nav-dd-icon nav-dd-icon-white"><i class="fa-solid fa-arrow-right"></i></div><div class="nav-dd-text"><strong>All Technologies</strong><span>See full stack</span></div></a>
+        </div>
+      </li> 
+      <li class="nav-dropdown">
+        <a href="../industries.html">Industries <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Industries submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Industries</div>
+          <a href="../industries/healthcare.html"><div class="nav-dd-icon"><i class="fa-solid fa-hospital"></i></div><div class="nav-dd-text"><strong>Healthcare</strong><span>MedTech</span></div></a>
+          <a href="../industries/fintech.html"><div class="nav-dd-icon"><i class="fa-solid fa-building-columns"></i></div><div class="nav-dd-text"><strong>FinTech</strong><span>Banking, Finance</span></div></a>
+          <a href="../industries/education.html"><div class="nav-dd-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="nav-dd-text"><strong>Education</strong><span>EdTech</span></div></a>
+          <a href="../industries/retail.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>Retail</strong><span>E-Commerce</span></div></a>
+          <a href="../industries.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Industries</strong><span>12+ sectors served</span></div></a>
+        </div>
+      </li>
+            <li class="nav-mobile-cta"><a href="../quote.html" class="mm-cta-btn primary"><i class="fa-solid fa-rocket"></i> Get a Free Quote</a><a href="../contact.html" class="mm-cta-btn secondary"><i class="fa-solid fa-calendar-check"></i> Schedule a Call</a></li>
+    </ul>
+    <div class="nav-cta"><a href="../quote.html" class="btn-nav">Get a Quote</a><a href="../contact.html" class="btn-nav btn-nav-primary">Let's Talk</a></div>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-shape page-hero-shape-1"></div>
+  <div class="page-hero-shape page-hero-shape-2"></div>
+  <div class="page-hero-shape page-hero-shape-3"></div>
+  <div class="page-hero-shape page-hero-shape-4"></div>
+  <div class="page-hero-icon-bg"><i class="fa-solid fa-code"></i></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span><i class="fa-solid fa-angle-right breadcrumb-angle"></i></span><a href="../services.html">Services</a><span><i class="fa-solid fa-angle-right breadcrumb-angle"></i></span><span>Web Development</span></div>
+    <div class="page-hero-label reveal"><i class="fa-solid fa-code"></i> Web Development</div>
+    <h1 class="page-hero-title reveal">High-Performance <span>Web Apps</span></h1>
+    <p class="page-hero-subtitle reveal">React, Next.js, Node.js, Laravel — we build scalable, fast, and secure web applications that users love and businesses rely on.</p>
+    <div class="page-hero-actions reveal">
+      <a href="../quote.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+      <a href="../portfolio.html" class="btn btn-ghost"><i class="fa-solid fa-images"></i> View Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- INNER STATS -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="inner-stats reveal">
+      <div class="inner-stat"><div class="inner-stat-num" data-count="500">0</div><div class="inner-stat-label">Projects Delivered</div></div>
+      <div class="inner-stat"><div class="inner-stat-num">99%</div><div class="inner-stat-label">Client Satisfaction</div></div>
+      <div class="inner-stat"><div class="inner-stat-num" data-count="10">0</div><div class="inner-stat-label">Years Experience</div></div>
+      <div class="inner-stat"><div class="inner-stat-num" data-count="48">0</div><div class="inner-stat-label">Hour Turnaround</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE STRIP -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head-sm">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Why Choose Us</div>
+      <h2 class="section-title reveal">Built for <span>Scale &amp; Speed</span></h2>
+    </div>
+    <div class="feature-strip">
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="fs-title">Lightning Fast</div>
+        <div class="fs-desc">Core Web Vitals optimised — sub-second load times with server-side rendering and edge caching.</div>
+      </div>
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="fs-title">Secure by Default</div>
+        <div class="fs-desc">OWASP-compliant code, HTTPS, CSP headers, rate limiting, and regular security audits built-in.</div>
+      </div>
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-solid fa-arrows-up-to-line"></i></div>
+        <div class="fs-title">Infinitely Scalable</div>
+        <div class="fs-desc">Cloud-native architecture that scales from 100 to 10 million users without rewriting a line of code.</div>
+      </div>
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-solid fa-universal-access"></i></div>
+        <div class="fs-title">Accessible &amp; SEO-Ready</div>
+        <div class="fs-desc">WCAG 2.1 AA accessibility and semantic HTML for maximum search engine visibility.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE BUILD -->
+<section class="section-gray">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Services</div>
+      <h2 class="section-title reveal">What We <span>Build</span></h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-brands fa-react"></i></div><div class="service-name">React &amp; Next.js Apps</div><div class="service-desc">Dynamic SPAs and SSR web apps with blazing performance, SEO-friendly rendering, and component-driven architecture.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-server"></i></div><div class="service-name">Backend &amp; REST APIs</div><div class="service-desc">Node.js, Laravel, Python Django APIs — documented, tested, versioned, and secured with JWT/OAuth2.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-table-columns"></i></div><div class="service-name">Admin Dashboards</div><div class="service-desc">Feature-rich management portals with real-time charts, RBAC permissions, and export tools.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-rotate"></i></div><div class="service-name">CMS &amp; Portals</div><div class="service-desc">WordPress, Headless CMS, custom portals — full editorial control without touching code.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-plug"></i></div><div class="service-name">Third-Party Integrations</div><div class="service-desc">Stripe, Twilio, Salesforce, HubSpot, Zapier — we connect your web app to any platform via API.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div><div class="service-name">Migration &amp; Modernisation</div><div class="service-desc">Lift-and-shift or full rebuild — migrate legacy PHP or jQuery apps to modern React/Node architectures.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="two-col-12">
+      <div class="reveal-left">
+        <div class="section-label"><i class="fa-solid fa-circle-dot"></i> How We Work</div>
+        <h2 class="section-title mb-15">Our <span>Development</span><br>Process</h2>
+        <p class="text-muted-18">Every project follows a battle-tested workflow that keeps you informed, on budget, and on time — from first call to post-launch support.</p>
+      </div>
+      <div class="reveal-right">
+        <div class="process-v2">
+          <div class="process-v2-step"><div class="pv2-num">01</div><div class="pv2-content"><div class="pv2-content-title">Discovery &amp; Architecture</div><div class="pv2-content-desc">Requirements gathering, system design, tech stack selection, and project roadmap in a structured kick-off workshop.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">02</div><div class="pv2-content"><div class="pv2-content-title">UI/UX Design &amp; Prototype</div><div class="pv2-content-desc">Figma wireframes and interactive prototypes — you see and approve the UX before a single line of code is written.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">03</div><div class="pv2-content"><div class="pv2-content-title">Agile Development</div><div class="pv2-content-desc">2-week sprints with daily stand-ups, Jira tracking, and GitHub PRs — full transparency into every change.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">04</div><div class="pv2-content"><div class="pv2-content-title">QA &amp; Performance Testing</div><div class="pv2-content-desc">Automated unit/integration tests, Lighthouse audits, load testing, and cross-browser QA before any release.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">05</div><div class="pv2-content"><div class="pv2-content-title">Launch &amp; Ongoing Support</div><div class="pv2-content-desc">Zero-downtime deployment, monitoring setup, and 3-month free support with SLA-backed response times.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="section-gray">
+  <div class="container">
+    <div class="sec-head-sm">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Tech Stack</div>
+      <h2 class="section-title reveal">Technologies We <span>Use</span></h2>
+    </div>
+    <div class="tech-pill-grid reveal">
+      <div class="tech-pill"><i class="fa-brands fa-react icon-react"></i> React.js</div>
+      <div class="tech-pill"><i class="fa-brands fa-js icon-js"></i> Next.js</div>
+      <div class="tech-pill"><i class="fa-brands fa-node-js icon-node"></i> Node.js</div>
+      <div class="tech-pill"><i class="fa-brands fa-php icon-php"></i> Laravel</div>
+      <div class="tech-pill"><i class="fa-brands fa-python icon-python"></i> Python</div>
+      <div class="tech-pill"><i class="fa-solid fa-database icon-postgres"></i> PostgreSQL</div>
+      <div class="tech-pill"><i class="fa-solid fa-leaf icon-mongodb"></i> MongoDB</div>
+      <div class="tech-pill"><i class="fa-brands fa-aws icon-aws"></i> AWS</div>
+      <div class="tech-pill"><i class="fa-brands fa-docker icon-docker"></i> Docker</div>
+      <div class="tech-pill"><i class="fa-solid fa-fire icon-red-light"></i> Redis</div>
+      <div class="tech-pill"><i class="fa-brands fa-github icon-dark"></i> GitHub CI/CD</div>
+      <div class="tech-pill"><i class="fa-solid fa-dharmachakra icon-k8s"></i> Kubernetes</div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head-sm">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Proven Results</div>
+      <h2 class="section-title reveal">Numbers That <span>Speak</span></h2>
+    </div>
+    <div class="result-cards">
+      <div class="result-card reveal"><div class="result-num"><span data-count="40">0</span><span>%</span></div><div class="result-label">Average Revenue Increase After Launch</div></div>
+      <div class="result-card reveal"><div class="result-num"><span>3×</span></div><div class="result-label">Faster than Previous Websites</div></div>
+      <div class="result-card reveal"><div class="result-num"><span data-count="95">0</span><span>%</span></div><div class="result-label">Google Lighthouse Score (Avg)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-gray">
+  <div class="container max-w-800">
+    <div class="sec-head-sm">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> FAQ</div>
+      <h2 class="section-title reveal">Common <span>Questions</span></h2>
+    </div>
+    <div class="faq-v2 reveal">
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">How long does a typical web project take?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">A standard marketing website takes 3–6 weeks. A complex web application with custom features and integrations typically takes 3–6 months. We provide a detailed timeline during the discovery phase.</div>
+      </div>
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">Do you provide hosting and ongoing maintenance?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">Yes. We offer managed hosting on AWS or GCP, with 99.9% uptime SLA, automated backups, security patches, and monthly maintenance plans. All projects include 3 months of free post-launch support.</div>
+      </div>
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">Can you redesign or rebuild my existing website?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">Absolutely. We handle full redesigns, partial rebuilds, and migrations from legacy platforms. We preserve SEO equity and ensure zero downtime during the transition.</div>
+      </div>
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">What is your pricing model?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">We offer fixed-price projects for well-defined scopes and time-and-material for ongoing product development. All quotes are transparent with no hidden fees. Contact us for a detailed estimate.</div>
+      </div>
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">Do you sign NDAs?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">Yes, we sign NDAs before any project discussion. Your IP, data, and business ideas are fully protected. We also provide full source code ownership upon project completion.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2 class="cta-banner-title">Ready to Build Something<br>Extraordinary?</h2>
+  <p class="cta-banner-sub">Get a free project estimate. No obligation, no pushy sales calls — just honest advice from engineers.</p>
+  <div class="cta-banner-actions">
+    <a href="../quote.html" class="btn btn-white"><i class="fa-solid fa-rocket"></i> Get Free Quote</a>
+    <a href="../contact.html" class="btn btn-ghost-alt"><i class="fa-solid fa-phone"></i> Talk to Our Team</a>
+  </div>
+  <div class="cta-banner-badges">
+    <span class="cta-badge"><i class="fa-solid fa-check-circle"></i> Free Consultation</span>
+    <span class="cta-badge"><i class="fa-solid fa-shield-halved"></i> NDA Signed First</span>
+    <span class="cta-badge"><i class="fa-solid fa-clock"></i> 48h Response</span>
+    <span class="cta-badge"><i class="fa-solid fa-file-code"></i> Full Code Ownership</span>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="../index.html"><img src="../assets/images/logo-white.png" alt="Avology Technologies" class="footer-logo" onerror="this.src='../assets/images/logo.png'"></a>
+        <p class="footer-tagline">Smart Code. Human Design. Scalable Impact. We build digital products that help businesses grow globally.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/avology" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/avologypro" target="_blank" class="footer-social" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/avologytechnologies" target="_blank" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@avologypro" target="_blank" class="footer-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/918219658223" target="_blank" class="footer-social" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="../services/web-development.html"><i class="fa-solid fa-angle-right"></i> Web Development</a></li>
+          <li><a href="../services/mobile-app.html"><i class="fa-solid fa-angle-right"></i> Mobile App</a></li>
+          <li><a href="../services/web-design.html"><i class="fa-solid fa-angle-right"></i> UI/UX Design</a></li>
+          <li><a href="../services/ecommerce.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="../services/seo.html"><i class="fa-solid fa-angle-right"></i> SEO &amp; Marketing</a></li>
+          <li><a href="../services/branding.html"><i class="fa-solid fa-angle-right"></i> Branding</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="../portfolio.html"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+          <li><a href="../careers.html"><i class="fa-solid fa-angle-right"></i> Careers</a></li>
+          <li><a href="../contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          <li><a href="../quote.html"><i class="fa-solid fa-angle-right"></i> Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="../industries/healthcare.html"><i class="fa-solid fa-angle-right"></i> Healthcare</a></li>
+          <li><a href="../industries/fintech.html"><i class="fa-solid fa-angle-right"></i> Fintech</a></li>
+          <li><a href="../industries/education.html"><i class="fa-solid fa-angle-right"></i> Education</a></li>
+          <li><a href="../industries/retail.html"><i class="fa-solid fa-angle-right"></i> Retail</a></li>
+          <li><a href="../industries.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="../industries.html"><i class="fa-solid fa-angle-right"></i> Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="footer-contact-text">Plot No. C, 127, Phase-8, Industrial Area, Sector 73, SAS Nagar, Punjab 160071</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="footer-contact-text"><a href="tel:+918219658223">+91 82-196-582-23</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:contact@avologypro.com">contact@avologypro.com</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="footer-contact-text">Mon&#8211;Fri, 10:00 AM &#8211; 7:00 PM IST</div>
+        </div>
+        <div class="mt-5q">
+          <a href="../quote.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&#169; 2026 Avology Technologies Pvt. Ltd. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-v2-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-v2-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-v2-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
+
+
+

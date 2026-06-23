@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile App Development — Avology Technologies</title>
+<meta name="description" content="iOS, Android, and cross-platform mobile apps built with Flutter and React Native. High-performance, pixel-perfect mobile experiences by Avology Technologies.">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="../assets/images/logo.png" type="image/png">
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-logo"><img src="../assets/images/logo.png" alt="Avology Technologies"></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../assets/images/logo.png" alt="Avology Technologies"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="../services.html">Services <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Services submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Services</div>
+          <a href="web-development.html"><div class="nav-dd-icon"><i class="fa-solid fa-code"></i></div><div class="nav-dd-text"><strong>Web Development</strong><span>React, Next.js, Laravel</span></div></a>
+          <a href="mobile-app.html"><div class="nav-dd-icon"><i class="fa-solid fa-mobile-screen"></i></div><div class="nav-dd-text"><strong>Mobile App</strong><span>iOS, Android, Flutter</span></div></a>
+          <a href="web-design.html"><div class="nav-dd-icon"><i class="fa-solid fa-pen-ruler"></i></div><div class="nav-dd-text"><strong>UI/UX Design</strong><span>Figma, Design Systems</span></div></a>
+          <a href="ecommerce.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>E-Commerce</strong><span>Shopify, WooCommerce</span></div></a>
+          <a href="seo.html"><div class="nav-dd-icon"><i class="fa-solid fa-chart-line"></i></div><div class="nav-dd-text"><strong>SEO &amp; Marketing</strong><span>Ads, SEO, Social</span></div></a>
+          <a href="branding.html"><div class="nav-dd-icon"><i class="fa-solid fa-palette"></i></div><div class="nav-dd-text"><strong>Branding</strong><span>Logo, Identity</span></div></a>
+          <a href="../services.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Services</strong><span>See everything we offer</span></div></a>
+        </div>
+      </li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li class="nav-dropdown">
+        <a href="../technologies.html">Technologies <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Technologies submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Technologies</div>
+          <a href="../technologies/react.html"><div class="nav-dd-icon"><i class="fa-brands fa-react icon-react"></i></div><div class="nav-dd-text"><strong>React / Next.js</strong><span>Frontend</span></div></a>
+          <a href="../technologies/nodejs.html"><div class="nav-dd-icon"><i class="fa-brands fa-node-js icon-node"></i></div><div class="nav-dd-text"><strong>Node.js</strong><span>Backend</span></div></a>
+          <a href="../technologies/flutter.html"><div class="nav-dd-icon"><i class="fa-solid fa-layer-group icon-flutter"></i></div><div class="nav-dd-text"><strong>Flutter</strong><span>Mobile</span></div></a>
+          <a href="../technologies/aws.html"><div class="nav-dd-icon"><i class="fa-brands fa-aws icon-aws"></i></div><div class="nav-dd-text"><strong>AWS / Cloud</strong><span>Hosting &amp; Infra</span></div></a>
+          <a href="../technologies.html" class="nav-dd-all-primary"><div class="nav-dd-icon nav-dd-icon-white"><i class="fa-solid fa-arrow-right"></i></div><div class="nav-dd-text"><strong>All Technologies</strong><span>See full stack</span></div></a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../industries.html">Industries <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Industries submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Industries</div>
+          <a href="../industries/healthcare.html"><div class="nav-dd-icon"><i class="fa-solid fa-hospital"></i></div><div class="nav-dd-text"><strong>Healthcare</strong><span>MedTech</span></div></a>
+          <a href="../industries/fintech.html"><div class="nav-dd-icon"><i class="fa-solid fa-building-columns"></i></div><div class="nav-dd-text"><strong>FinTech</strong><span>Banking, Finance</span></div></a>
+          <a href="../industries/education.html"><div class="nav-dd-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="nav-dd-text"><strong>Education</strong><span>EdTech</span></div></a>
+          <a href="../industries/retail.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>Retail</strong><span>E-Commerce</span></div></a>
+          <a href="../industries.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Industries</strong><span>12+ sectors served</span></div></a>
+        </div>
+      </li>
+            <li class="nav-mobile-cta"><a href="../quote.html" class="mm-cta-btn primary"><i class="fa-solid fa-rocket"></i> Get a Free Quote</a><a href="../contact.html" class="mm-cta-btn secondary"><i class="fa-solid fa-calendar-check"></i> Schedule a Call</a></li>
+    </ul>
+    <div class="nav-cta"><a href="../quote.html" class="btn-nav">Get a Quote</a><a href="../contact.html" class="btn-nav btn-nav-primary">Let's Talk</a></div>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-shape page-hero-shape-1"></div>
+  <div class="page-hero-shape page-hero-shape-2"></div>
+  <div class="page-hero-shape page-hero-shape-3"></div>
+  <div class="page-hero-shape page-hero-shape-4"></div>
+  <div class="page-hero-icon-bg"><i class="fa-solid fa-mobile-screen"></i></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span><i class="fa-solid fa-angle-right breadcrumb-angle"></i></span><a href="../services.html">Services</a><span><i class="fa-solid fa-angle-right breadcrumb-angle"></i></span><span>Mobile App</span></div>
+    <div class="page-hero-label reveal"><i class="fa-solid fa-mobile-screen"></i> Mobile App Development</div>
+    <h1 class="page-hero-title reveal">Apps Users <span>Love &amp; Trust</span></h1>
+    <p class="page-hero-subtitle reveal">Native iOS, Android, and Flutter cross-platform apps — designed beautifully, built robustly, and scaled globally for millions of users.</p>
+    <div class="page-hero-actions reveal">
+      <a href="../quote.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Build Your App</a>
+      <a href="../portfolio.html" class="btn btn-ghost"><i class="fa-solid fa-images"></i> View Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="section pb-0">
+  <div class="container">
+    <div class="inner-stats reveal">
+      <div class="inner-stat"><div class="inner-stat-num" data-count="300">0</div><div class="inner-stat-label">Apps Launched</div></div>
+      <div class="inner-stat"><div class="inner-stat-num">4.8★</div><div class="inner-stat-label">Avg App Store Rating</div></div>
+      <div class="inner-stat"><div class="inner-stat-num">50M+</div><div class="inner-stat-label">End Users</div></div>
+      <div class="inner-stat"><div class="inner-stat-num" data-count="12">0</div><div class="inner-stat-label">Industries Served</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head-sm">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> What We Build</div>
+      <h2 class="section-title reveal">App Types We <span>Specialise In</span></h2>
+    </div>
+    <div class="feature-strip">
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="fs-title">Cross-Platform (Flutter)</div>
+        <div class="fs-desc">One codebase, two stores. Flutter apps look and feel native on both iOS and Android — 60% less cost.</div>
+      </div>
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-brands fa-apple"></i></div>
+        <div class="fs-title">Native iOS (Swift)</div>
+        <div class="fs-desc">Full access to iOS APIs — ARKit, HealthKit, Face ID, Apple Pay, and the latest iOS features.</div>
+      </div>
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-brands fa-android"></i></div>
+        <div class="fs-title">Native Android (Kotlin)</div>
+        <div class="fs-desc">Jetpack Compose UI, Material You, background tasks, and full Android hardware access.</div>
+      </div>
+      <div class="feature-strip-card reveal">
+        <div class="fs-icon"><i class="fa-brands fa-react"></i></div>
+        <div class="fs-title">React Native</div>
+        <div class="fs-desc">JavaScript-powered mobile apps with web code reuse and a massive open-source ecosystem.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-gray">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Services</div>
+      <h2 class="section-title reveal">Full-Cycle <span>App Development</span></h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div><div class="service-name">UX Strategy &amp; Prototyping</div><div class="service-desc">User journey mapping, information architecture, wireframes, and interactive Figma prototypes before writing code.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="service-name">eCommerce Apps</div><div class="service-desc">Mobile storefronts with cart, wishlist, Stripe/Razorpay payments, order tracking, and push notifications.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-comments"></i></div><div class="service-name">Social &amp; Community Apps</div><div class="service-desc">Real-time chat, feeds, stories, reactions, notifications, and moderation tools built for scale.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-hospital"></i></div><div class="service-name">Healthcare &amp; Fitness Apps</div><div class="service-desc">HIPAA-compliant telemedicine, appointment booking, wearable integration, and health data dashboards.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-map-location-dot"></i></div><div class="service-name">On-Demand &amp; Geolocation</div><div class="service-desc">Uber-like apps with real-time tracking, driver/rider matching, Google Maps integration, and dynamic pricing.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-wrench"></i></div><div class="service-name">App Maintenance &amp; Upgrades</div><div class="service-desc">OS version updates, performance tuning, feature additions, and crash monitoring for existing apps.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col-21">
+      <div class="reveal-left">
+        <div class="process-v2">
+          <div class="process-v2-step"><div class="pv2-num">01</div><div class="pv2-content"><div class="pv2-content-title">Strategy &amp; Scope</div><div class="pv2-content-desc">Platform selection, target audience analysis, competitor review, and feature prioritisation in a structured sprint-0 session.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">02</div><div class="pv2-content"><div class="pv2-content-title">Design &amp; Prototype</div><div class="pv2-content-desc">Platform-native UI patterns (Material 3, HIG), interactive Figma prototypes, and usability testing before dev starts.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">03</div><div class="pv2-content"><div class="pv2-content-title">Development &amp; CI/CD</div><div class="pv2-content-desc">Agile sprints with TestFlight/Firebase distribution, automated testing, and weekly demo builds for your review.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">04</div><div class="pv2-content"><div class="pv2-content-title">Store Submission &amp; Launch</div><div class="pv2-content-desc">App Store and Google Play submission with metadata, screenshots, and ASO (App Store Optimisation) included.</div></div></div>
+          <div class="process-v2-step"><div class="pv2-num">05</div><div class="pv2-content"><div class="pv2-content-title">Post-Launch Growth</div><div class="pv2-content-desc">Crash monitoring (Sentry/Firebase Crashlytics), analytics, A/B testing, and feature iteration based on user data.</div></div></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="section-label"><i class="fa-solid fa-circle-dot"></i> Our Process</div>
+        <h2 class="section-title mb-1">From Idea to <span>App Store</span></h2>
+        <p class="text-muted-sm">A structured 5-phase process that eliminates guesswork, keeps stakeholders aligned, and ships on time.</p>
+        <div class="result-cards grid-2">
+          <div class="result-card"><div class="result-num"><span>12</span></div><div class="result-label">Weeks Average Timeline</div></div>
+          <div class="result-card"><div class="result-num"><span>2</span></div><div class="result-label">Week Sprint Cycles</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-gray">
+  <div class="container max-w-800">
+    <div class="sec-head-sm">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> FAQ</div>
+      <h2 class="section-title reveal">Common <span>Questions</span></h2>
+    </div>
+    <div class="faq-v2 reveal">
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">Flutter vs React Native — which is better?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">Flutter gives more pixel-perfect UI control and better performance. React Native allows web/mobile code sharing. We recommend Flutter for new apps and React Native when you have an existing React web team. We'll guide you to the right choice.</div>
+      </div>
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">How much does a mobile app cost?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">A simple app with 5–8 screens starts at ₹3–5L. A complex app with backend, real-time features, and payment integration is typically ₹8–20L+. We provide a detailed scope-based quote after the discovery call.</div>
+      </div>
+      <div class="faq-v2-item">
+        <div class="faq-v2-q">Do you handle App Store and Play Store submission?<span class="faq-v2-icon"><i class="fa-solid fa-plus"></i></span></div>
+        <div class="faq-v2-a">Yes — we handle everything including screenshots, metadata, app review responses, and ASO. We've submitted 300+ apps and know exactly how to get approved quickly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2 class="cta-banner-title">Turn Your App Idea Into<br>a Product Users Love</h2>
+  <p class="cta-banner-sub">Free discovery call — we'll assess your idea, suggest the best platform, and give a ballpark estimate.</p>
+  <div class="cta-banner-actions">
+    <a href="../quote.html" class="btn btn-white"><i class="fa-solid fa-rocket"></i> Get Free Quote</a>
+    <a href="../contact.html" class="btn btn-ghost-alt"><i class="fa-solid fa-phone"></i> Talk to Us</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="../index.html"><img src="../assets/images/logo-white.png" alt="Avology Technologies" class="footer-logo" onerror="this.src='../assets/images/logo.png'"></a>
+        <p class="footer-tagline">Smart Code. Human Design. Scalable Impact. We build digital products that help businesses grow globally.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/avology" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/avologypro" target="_blank" class="footer-social" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/avologytechnologies" target="_blank" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@avologypro" target="_blank" class="footer-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/918219658223" target="_blank" class="footer-social" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="../services/web-development.html"><i class="fa-solid fa-angle-right"></i> Web Development</a></li>
+          <li><a href="../services/mobile-app.html"><i class="fa-solid fa-angle-right"></i> Mobile App</a></li>
+          <li><a href="../services/web-design.html"><i class="fa-solid fa-angle-right"></i> UI/UX Design</a></li>
+          <li><a href="../services/ecommerce.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="../services/seo.html"><i class="fa-solid fa-angle-right"></i> SEO &amp; Marketing</a></li>
+          <li><a href="../services/branding.html"><i class="fa-solid fa-angle-right"></i> Branding</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="../portfolio.html"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+          <li><a href="../careers.html"><i class="fa-solid fa-angle-right"></i> Careers</a></li>
+          <li><a href="../contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          <li><a href="../quote.html"><i class="fa-solid fa-angle-right"></i> Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="../industries/healthcare.html"><i class="fa-solid fa-angle-right"></i> Healthcare</a></li>
+          <li><a href="../industries/fintech.html"><i class="fa-solid fa-angle-right"></i> Fintech</a></li>
+          <li><a href="../industries/education.html"><i class="fa-solid fa-angle-right"></i> Education</a></li>
+          <li><a href="../industries/retail.html"><i class="fa-solid fa-angle-right"></i> Retail</a></li>
+          <li><a href="../industries.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="../industries.html"><i class="fa-solid fa-angle-right"></i> Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="footer-contact-text">Plot No. C, 127, Phase-8, Industrial Area, Sector 73, SAS Nagar, Punjab 160071</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="footer-contact-text"><a href="tel:+918219658223">+91 82-196-582-23</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:contact@avologypro.com">contact@avologypro.com</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="footer-contact-text">Mon&#8211;Fri, 10:00 AM &#8211; 7:00 PM IST</div>
+        </div>
+        <div class="mt-5q">
+          <a href="../quote.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&#169; 2026 Avology Technologies Pvt. Ltd. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script>document.querySelectorAll('.faq-v2-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.closest('.faq-v2-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-v2-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');});});</script>
+</body>
+</html>
+
+
+

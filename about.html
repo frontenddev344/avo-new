@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Avology Technologies</title>
+<meta name="description" content="Learn about Avology Technologies — 10+ years of excellence, 60+ team members, and 10,000+ projects delivered globally.">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo"><img src="assets/images/logo.png" alt="Avology Technologies"></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Avology Technologies"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="services.html">Services <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Services submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Services</div>
+          <a href="services/web-development.html"><div class="nav-dd-icon"><i class="fa-solid fa-code"></i></div><div class="nav-dd-text"><strong>Web Development</strong><span>React, Next.js, Laravel</span></div></a>
+          <a href="services/mobile-app.html"><div class="nav-dd-icon"><i class="fa-solid fa-mobile-screen"></i></div><div class="nav-dd-text"><strong>Mobile App</strong><span>iOS, Android, Flutter</span></div></a>
+          <a href="services/web-design.html"><div class="nav-dd-icon"><i class="fa-solid fa-pen-ruler"></i></div><div class="nav-dd-text"><strong>UI/UX Design</strong><span>Figma, Design Systems</span></div></a>
+          <a href="services/ecommerce.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>E-Commerce</strong><span>Shopify, WooCommerce</span></div></a>
+          <a href="services/seo.html"><div class="nav-dd-icon"><i class="fa-solid fa-chart-line"></i></div><div class="nav-dd-text"><strong>SEO &amp; Marketing</strong><span>Ads, SEO, Social</span></div></a>
+          <a href="services/branding.html"><div class="nav-dd-icon"><i class="fa-solid fa-palette"></i></div><div class="nav-dd-text"><strong>Branding</strong><span>Logo, Identity</span></div></a>
+          <a href="services.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Services</strong><span>See everything we offer</span></div></a>
+        </div>
+      </li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li class="nav-dropdown">
+        <a href="technologies.html">Technologies <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Technologies submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Technologies</div>
+          <a href="technologies/react.html"><div class="nav-dd-icon"><i class="fa-brands fa-react icon-react"></i></div><div class="nav-dd-text"><strong>React / Next.js</strong><span>Frontend</span></div></a>
+          <a href="technologies/nodejs.html"><div class="nav-dd-icon"><i class="fa-brands fa-node-js icon-node"></i></div><div class="nav-dd-text"><strong>Node.js</strong><span>Backend</span></div></a>
+          <a href="technologies/flutter.html"><div class="nav-dd-icon"><i class="fa-solid fa-layer-group icon-flutter"></i></div><div class="nav-dd-text"><strong>Flutter</strong><span>Mobile</span></div></a>
+          <a href="technologies/aws.html"><div class="nav-dd-icon"><i class="fa-brands fa-aws icon-aws"></i></div><div class="nav-dd-text"><strong>AWS / Cloud</strong><span>Hosting &amp; Infra</span></div></a>
+          <a href="technologies.html" class="nav-dd-all-primary"><div class="nav-dd-icon nav-dd-icon-white"><i class="fa-solid fa-arrow-right"></i></div><div class="nav-dd-text"><strong>All Technologies</strong><span>See full stack</span></div></a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="industries.html">Industries <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Industries submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Industries</div>
+          <a href="industries/healthcare.html"><div class="nav-dd-icon"><i class="fa-solid fa-hospital"></i></div><div class="nav-dd-text"><strong>Healthcare</strong><span>MedTech</span></div></a>
+          <a href="industries/fintech.html"><div class="nav-dd-icon"><i class="fa-solid fa-building-columns"></i></div><div class="nav-dd-text"><strong>FinTech</strong><span>Banking, Finance</span></div></a>
+          <a href="industries/education.html"><div class="nav-dd-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="nav-dd-text"><strong>Education</strong><span>EdTech</span></div></a>
+          <a href="industries/retail.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>Retail</strong><span>E-Commerce</span></div></a>
+          <a href="industries.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Industries</strong><span>12+ sectors served</span></div></a>
+        </div>
+      </li>
+            <li class="nav-mobile-cta"><a href="quote.html" class="mm-cta-btn primary"><i class="fa-solid fa-rocket"></i> Get a Free Quote</a><a href="contact.html" class="mm-cta-btn secondary"><i class="fa-solid fa-calendar-check"></i> Schedule a Call</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="quote.html" class="btn-nav">Get a Quote</a>
+      <a href="contact.html" class="btn-nav btn-nav-primary">Let's Talk</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-shape page-hero-shape-1"></div>
+  <div class="page-hero-shape page-hero-shape-2"></div>
+  <div class="page-hero-shape page-hero-shape-3"></div>
+  <div class="page-hero-shape page-hero-shape-4"></div>
+  <div class="page-hero-icon-bg"><i class="fa-solid fa-users"></i></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span><i class="fa-solid fa-angle-right breadcrumb-angle"></i></span><span>About Us</span></div>
+    <div class="page-hero-label reveal"><i class="fa-solid fa-users"></i> Our Story</div>
+    <h1 class="page-hero-title reveal">Who We <span>Are</span></h1>
+    <p class="page-hero-subtitle reveal">A global IT powerhouse built on innovation, integrity, and an unwavering commitment to client success.</p>
+    <div class="page-hero-actions reveal">
+      <a href="quote.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Work With Us</a>
+      <a href="contact.html" class="btn btn-ghost"><i class="fa-solid fa-phone"></i> Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col-grid">
+      <div class="reveal-left">
+        <div class="section-label"><i class="fa-solid fa-circle-dot"></i> Our Story</div>
+        <h2 class="section-title">From a Small Studio<br>to a <span>Global Force</span></h2>
+        <p class="text-muted-sm">Founded in 2014 in Mohali, Punjab, Avology Technologies began with a simple mission: deliver world-class digital solutions at an honest price. What started as a 3-person web studio has grown into a 60+ strong team of designers, developers, strategists, and marketers serving clients across 25+ countries.</p>
+        <p class="text-muted-sm">Over a decade later, we've delivered 10,000+ projects — from startup MVPs to enterprise platforms — always with the same dedication to craft, communication, and results that actually move the needle.</p>
+        <div class="flex-wrap-gap-1">
+          <a href="quote.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Work With Us</a>
+          <a href="portfolio.html" class="btn btn-secondary"><i class="fa-solid fa-images"></i> See Our Work</a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <img src="assets/images/office.png" alt="Avology Technologies Office" class="img-card">
+        <div class="grid-2-mt">
+          <div class="stat-card"><div class="stat-number" data-count="2014">0</div><div class="stat-label">Year Founded</div></div>
+          <div class="stat-card"><div class="stat-number" data-count="60" data-suffix="+">0</div><div class="stat-label">Team Members</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-gray">
+  <div class="container">
+    <div class="stats-grid grid-4-auto">
+      <div class="stat-card reveal"><div class="stat-number" data-count="10000">0</div><div class="stat-label">Projects Delivered</div></div>
+      <div class="stat-card reveal"><div class="stat-number" data-count="97" data-suffix="%">0</div><div class="stat-label">Client Satisfaction</div></div>
+      <div class="stat-card reveal"><div class="stat-number" data-count="25" data-suffix="+">0</div><div class="stat-label">Countries Served</div></div>
+      <div class="stat-card reveal"><div class="stat-number" data-count="10" data-suffix="+">0</div><div class="stat-label">Years of Excellence</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> What Drives Us</div>
+      <h2 class="section-title reveal">Mission &amp; <span>Vision</span></h2>
+    </div>
+    <div class="grid-2-gap-2">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <div class="service-name">Our Mission</div>
+        <div class="service-desc">To empower businesses of every size with world-class digital solutions — delivered with transparency, precision, and genuine care for our clients' growth. We don't just build products; we build partnerships.</div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+        <div class="service-name">Our Vision</div>
+        <div class="service-desc">To be the most trusted IT partner for businesses across the globe — recognised for our quality, innovation, and the real-world impact we create for every single client we work with.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-gray">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Core Values</div>
+      <h2 class="section-title reveal">The Principles We <span>Live By</span></h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-gem"></i></div><div class="service-name">Quality First</div><div class="service-desc">We never cut corners. Every pixel, every line of code, every strategy is crafted to the highest standards.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-handshake"></i></div><div class="service-name">Transparency</div><div class="service-desc">No hidden costs, no surprises. We communicate openly throughout every project.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div><div class="service-name">Innovation</div><div class="service-desc">We stay ahead of the curve, constantly learning and applying the latest technologies.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-users"></i></div><div class="service-name">Client-Centric</div><div class="service-desc">Your success is our success. We measure our performance by the results we drive for you.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-clock"></i></div><div class="service-name">On-Time Delivery</div><div class="service-desc">97% on-time delivery rate. We respect your deadlines and business timelines.</div></div>
+      <div class="service-card reveal"><div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div><div class="service-name">Integrity</div><div class="service-desc">We do what we say. Trust is the foundation of every relationship we build.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="container text-center">
+    <div class="section-label reveal label-center"><i class="fa-brands fa-youtube"></i> Watch Our Story</div>
+    <h2 class="section-title reveal mb-25">See Avology <span>In Action</span></h2>
+    <div class="video-wrap-2 reveal">
+      <iframe class="video-iframe" src="https://www.youtube.com/embed/McIzZqLYSaM" title="About Avology Technologies" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section-gray">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-circle-dot"></i> Our Team</div>
+      <h2 class="section-title reveal">Meet the <span>Leadership</span></h2>
+      <p class="section-subtitle reveal mt-center-875">60+ experts united by a passion for building exceptional digital products.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal"><img class="team-photo" src="assets/images/team-1.png" alt="Team Member" loading="lazy"><div class="team-info"><div class="team-name">Manav Sharma</div><div class="team-role">CEO &amp; Founder</div><div class="team-socials"><a href="#" class="team-social"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="team-social"><i class="fa-brands fa-x-twitter"></i></a></div></div></div>
+      <div class="team-card reveal"><img class="team-photo" src="assets/images/team-2.png" alt="Team Member" loading="lazy"><div class="team-info"><div class="team-name">Priya Verma</div><div class="team-role">Head of Design</div><div class="team-socials"><a href="#" class="team-social"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="team-social"><i class="fa-brands fa-dribbble"></i></a></div></div></div>
+      <div class="team-card reveal"><img class="team-photo" src="assets/images/team-3.png" alt="Team Member" loading="lazy"><div class="team-info"><div class="team-name">Arjun Singh</div><div class="team-role">Lead Developer</div><div class="team-socials"><a href="#" class="team-social"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="team-social"><i class="fa-brands fa-github"></i></a></div></div></div>
+      <div class="team-card reveal"><img class="team-photo" src="assets/images/team-4.png" alt="Team Member" loading="lazy"><div class="team-info"><div class="team-name">Ravi Kumar</div><div class="team-role">Digital Strategist</div><div class="team-socials"><a href="#" class="team-social"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="team-social"><i class="fa-brands fa-x-twitter"></i></a></div></div></div>
+    </div>
+    <div class="sec-head-mt reveal"><a href="careers.html" class="btn btn-secondary"><i class="fa-solid fa-user-plus"></i> Join Our Team</a></div>
+  </div>
+</section>
+
+<div class="cta-banner reveal">
+  <h2 class="cta-banner-title">Ready to Partner With<br>a Team That Delivers?</h2>
+  <p class="cta-banner-sub">Book a free consultation and let's explore how Avology can accelerate your digital growth.</p>
+  <div class="cta-banner-actions">
+    <a href="quote.html" class="btn btn-white"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+    <a href="contact.html" class="btn btn-ghost-alt"><i class="fa-solid fa-phone"></i> Schedule a Call</a>
+  </div>
+  <div class="cta-banner-badges">
+    <span class="cta-badge"><i class="fa-solid fa-check-circle"></i> Free Consultation</span>
+    <span class="cta-badge"><i class="fa-solid fa-shield-halved"></i> NDA Signed</span>
+    <span class="cta-badge"><i class="fa-solid fa-bolt"></i> 48h Response</span>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html"><img src="assets/images/logo-white.png" alt="Avology Technologies" class="footer-logo" onerror="this.src='assets/images/logo.png'"></a>
+        <p class="footer-tagline">Smart Code. Human Design. Scalable Impact. We build digital products that help businesses grow globally.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/avology" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/avologypro" target="_blank" class="footer-social" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/avologytechnologies" target="_blank" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@avologypro" target="_blank" class="footer-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/918219658223" target="_blank" class="footer-social" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services/web-development.html"><i class="fa-solid fa-angle-right"></i> Web Development</a></li>
+          <li><a href="services/mobile-app.html"><i class="fa-solid fa-angle-right"></i> Mobile App</a></li>
+          <li><a href="services/web-design.html"><i class="fa-solid fa-angle-right"></i> UI/UX Design</a></li>
+          <li><a href="services/ecommerce.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="services/seo.html"><i class="fa-solid fa-angle-right"></i> SEO &amp; Marketing</a></li>
+          <li><a href="services/branding.html"><i class="fa-solid fa-angle-right"></i> Branding</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-angle-right"></i> Careers</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          <li><a href="quote.html"><i class="fa-solid fa-angle-right"></i> Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="industries/healthcare.html"><i class="fa-solid fa-angle-right"></i> Healthcare</a></li>
+          <li><a href="industries/fintech.html"><i class="fa-solid fa-angle-right"></i> Fintech</a></li>
+          <li><a href="industries/education.html"><i class="fa-solid fa-angle-right"></i> Education</a></li>
+          <li><a href="industries/retail.html"><i class="fa-solid fa-angle-right"></i> Retail</a></li>
+          <li><a href="industries.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="industries.html"><i class="fa-solid fa-angle-right"></i> Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="footer-contact-text">Plot No. C, 127, Phase-8, Industrial Area, Sector 73, SAS Nagar, Punjab 160071</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="footer-contact-text"><a href="tel:+918219658223">+91 82-196-582-23</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:contact@avologypro.com">contact@avologypro.com</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="footer-contact-text">Mon&#8211;Fri, 10:00 AM &#8211; 7:00 PM IST</div>
+        </div>
+        <div class="mt-5q">
+          <a href="quote.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&#169; 2026 Avology Technologies Pvt. Ltd. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

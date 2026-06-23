@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avology Technologies — Smart Code. Human Design. Scalable Impact.</title>
+<meta name="description" content="Avology Technologies is a premium IT company delivering world-class web development, mobile apps, UI/UX design, and digital marketing. 10,000+ projects delivered.">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo"><img src="assets/images/logo.png" alt="Avology Technologies"></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Avology Technologies"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="services.html">Services <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Services submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Services</div>
+          <a href="services/web-development.html"><div class="nav-dd-icon"><i class="fa-solid fa-code"></i></div><div class="nav-dd-text"><strong>Web Development</strong><span>React, Next.js, Laravel</span></div></a>
+          <a href="services/mobile-app.html"><div class="nav-dd-icon"><i class="fa-solid fa-mobile-screen"></i></div><div class="nav-dd-text"><strong>Mobile App</strong><span>iOS, Android, Flutter</span></div></a>
+          <a href="services/web-design.html"><div class="nav-dd-icon"><i class="fa-solid fa-pen-ruler"></i></div><div class="nav-dd-text"><strong>UI/UX Design</strong><span>Figma, Design Systems</span></div></a>
+          <a href="services/ecommerce.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>E-Commerce</strong><span>Shopify, WooCommerce</span></div></a>
+          <a href="services/seo.html"><div class="nav-dd-icon"><i class="fa-solid fa-chart-line"></i></div><div class="nav-dd-text"><strong>SEO &amp; Marketing</strong><span>Ads, SEO, Social</span></div></a>
+          <a href="services/branding.html"><div class="nav-dd-icon"><i class="fa-solid fa-palette"></i></div><div class="nav-dd-text"><strong>Branding</strong><span>Logo, Identity</span></div></a>
+          <a href="services.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Services</strong><span>See everything we offer</span></div></a>
+        </div>
+      </li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li class="nav-dropdown">
+        <a href="technologies.html">Technologies <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Technologies submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Technologies</div>
+          <a href="technologies/react.html"><div class="nav-dd-icon"><i class="fa-brands fa-react icon-react"></i></div><div class="nav-dd-text"><strong>React / Next.js</strong><span>Frontend</span></div></a>
+          <a href="technologies/nodejs.html"><div class="nav-dd-icon"><i class="fa-brands fa-node-js icon-node"></i></div><div class="nav-dd-text"><strong>Node.js</strong><span>Backend</span></div></a>
+          <a href="technologies/flutter.html"><div class="nav-dd-icon"><i class="fa-solid fa-layer-group icon-flutter"></i></div><div class="nav-dd-text"><strong>Flutter</strong><span>Mobile</span></div></a>
+          <a href="technologies/aws.html"><div class="nav-dd-icon"><i class="fa-brands fa-aws icon-aws"></i></div><div class="nav-dd-text"><strong>AWS / Cloud</strong><span>Hosting &amp; Infra</span></div></a>
+          <a href="technologies.html" class="nav-dd-all-primary"><div class="nav-dd-icon nav-dd-icon-white"><i class="fa-solid fa-arrow-right"></i></div><div class="nav-dd-text"><strong>All Technologies</strong><span>See full stack</span></div></a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="industries.html">Industries <i class="fa-solid fa-chevron-down nav-dd-chevron"></i></a><button class="nav-dd-toggle" aria-label="Toggle Industries submenu"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dd-single">
+          <div class="nav-dd-col-title">Industries</div>
+          <a href="industries/healthcare.html"><div class="nav-dd-icon"><i class="fa-solid fa-hospital"></i></div><div class="nav-dd-text"><strong>Healthcare</strong><span>MedTech</span></div></a>
+          <a href="industries/fintech.html"><div class="nav-dd-icon"><i class="fa-solid fa-building-columns"></i></div><div class="nav-dd-text"><strong>FinTech</strong><span>Banking, Finance</span></div></a>
+          <a href="industries/education.html"><div class="nav-dd-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="nav-dd-text"><strong>Education</strong><span>EdTech</span></div></a>
+          <a href="industries/retail.html"><div class="nav-dd-icon"><i class="fa-solid fa-cart-shopping"></i></div><div class="nav-dd-text"><strong>Retail</strong><span>E-Commerce</span></div></a>
+          <a href="industries.html" class="nav-dd-all"><div class="nav-dd-icon"><i class="fa-solid fa-grid-2"></i></div><div class="nav-dd-text"><strong>All Industries</strong><span>12+ sectors served</span></div></a>
+        </div>
+      </li>
+            <li class="nav-mobile-cta"><a href="quote.html" class="mm-cta-btn primary"><i class="fa-solid fa-rocket"></i> Get a Free Quote</a><a href="contact.html" class="mm-cta-btn secondary"><i class="fa-solid fa-calendar-check"></i> Schedule a Call</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="quote.html" class="btn-nav">Get a Quote</a>
+      <a href="contact.html" class="btn-nav btn-nav-primary">Let's Talk</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-parallax-bg" id="heroBg"></div>
+  <div class="hero-parallax-overlay"></div>
+  <div class="hero-bg-wrap">
+    <div class="hero-orb-new o1"></div>
+    <div class="hero-orb-new o2"></div>
+    <div class="hero-orb-new o3"></div>
+  </div>
+  <div class="hero-inner">
+
+    <!-- LEFT: Copy -->
+    <div class="reveal">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        Award-Winning Digital Agency · Since 2015
+      </div>
+      <h1 class="hero-h1">
+        We Design &amp;<br>
+        Build Digital<br>
+        <span class="grad">Experiences</span><br>
+        <span class="outline-text">That Win.</span>
+      </h1>
+      <p class="hero-lead">From strategy to launch — we craft high-performance web apps, mobile products, and brand identities that drive measurable growth for ambitious businesses worldwide.</p>
+      <div class="hero-btns">
+        <a href="quote.html" class="btn-hero-primary"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+        <a href="portfolio.html" class="btn-hero-secondary"><i class="fa-solid fa-images"></i> View Our Work</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-avs">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop&crop=faces&auto=format&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=faces&auto=format&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=faces&auto=format&q=80" alt="">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=faces&auto=format&q=80" alt="">
+        </div>
+        <div class="hero-trust-text">
+          <span class="hero-trust-stars">★★★★★</span>
+          <strong>500+ clients</strong> love working with us
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Device Mockup -->
+    <div class="hero-device-wrap reveal-right">
+
+      <!-- Floating card top -->
+      <div class="hfc hfc-1">
+        <div class="hfc-ico g"><i class="fa-solid fa-circle-check"></i></div>
+        <div>
+          <div class="hfc-title">Project Deployed 🚀</div>
+          <div class="hfc-sub">HealthTrack App · Live in 10 weeks</div>
+        </div>
+      </div>
+
+      <!-- Floating card right -->
+      <div class="hfc hfc-2">
+        <div class="hfc-ico b"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <div>
+          <div class="hfc-title">+340% Traffic Growth</div>
+          <div class="hfc-sub">vs. previous quarter</div>
+        </div>
+      </div>
+
+      <!-- Browser mockup -->
+      <div class="hero-browser">
+        <div class="hbr-bar">
+          <div class="hbr-dots"><span></span><span></span><span></span></div>
+          <div class="hbr-url">avology.io/client-dashboard</div>
+        </div>
+        <div class="hbr-body">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&q=70" alt="Client Dashboard" loading="eager">
+          <div class="hbr-body-overlay"></div>
+          <!-- In-browser metric pills -->
+          <div class="hbr-pill hbr-p1">
+            <div class="hbr-pill-icon badge-green"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <div class="hbr-pill-val text-green">$2.4M</div>
+              <div class="hbr-pill-lbl">Revenue Generated</div>
+            </div>
+          </div>
+          <div class="hbr-pill hbr-p2">
+            <div class="hbr-pill-icon badge-primary-soft"><i class="fa-solid fa-users"></i></div>
+            <div>
+              <div class="hbr-pill-val">97%</div>
+              <div class="hbr-pill-lbl">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="hero-phone">
+        <div class="hph-frame">
+          <div class="hph-notch"></div>
+          <div class="hph-screen">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&auto=format&q=70" alt="Mobile App" loading="eager">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLIENTS MARQUEE ═══ -->
+<div class="clients-strip">
+  <div class="clients-label">Trusted by innovative brands worldwide</div>
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="client-logo"><i class="fa-brands fa-google cl-icon icon-google"></i><span class="cl-name">Google</span></div>
+      <div class="client-logo"><i class="fa-brands fa-microsoft cl-icon icon-microsoft"></i><span class="cl-name">Microsoft</span></div>
+      <div class="client-logo"><i class="fa-brands fa-shopify cl-icon icon-shopify"></i><span class="cl-name">Shopify</span></div>
+      <div class="client-logo"><i class="fa-brands fa-github cl-icon icon-github"></i><span class="cl-name">GitHub</span></div>
+      <div class="client-logo"><i class="fa-brands fa-stripe cl-icon icon-stripe"></i><span class="cl-name">Stripe</span></div>
+      <div class="client-logo"><i class="fa-brands fa-slack cl-icon icon-slack"></i><span class="cl-name">Slack</span></div>
+      <div class="client-logo"><i class="fa-brands fa-figma cl-icon icon-figma"></i><span class="cl-name">Figma</span></div>
+      <div class="client-logo"><i class="fa-brands fa-adobe cl-icon text-red"></i><span class="cl-name">Adobe</span></div>
+      <div class="client-logo"><i class="fa-brands fa-aws cl-icon icon-aws-color"></i><span class="cl-name">AWS</span></div>
+      <div class="client-logo"><i class="fa-brands fa-hubspot cl-icon icon-hubspot"></i><span class="cl-name">HubSpot</span></div>
+      <div class="client-logo"><i class="fa-brands fa-google cl-icon icon-google"></i><span class="cl-name">Google</span></div>
+      <div class="client-logo"><i class="fa-brands fa-microsoft cl-icon icon-microsoft"></i><span class="cl-name">Microsoft</span></div>
+      <div class="client-logo"><i class="fa-brands fa-shopify cl-icon icon-shopify"></i><span class="cl-name">Shopify</span></div>
+      <div class="client-logo"><i class="fa-brands fa-github cl-icon icon-github"></i><span class="cl-name">GitHub</span></div>
+      <div class="client-logo"><i class="fa-brands fa-stripe cl-icon icon-stripe"></i><span class="cl-name">Stripe</span></div>
+      <div class="client-logo"><i class="fa-brands fa-slack cl-icon icon-slack"></i><span class="cl-name">Slack</span></div>
+      <div class="client-logo"><i class="fa-brands fa-figma cl-icon icon-figma"></i><span class="cl-name">Figma</span></div>
+      <div class="client-logo"><i class="fa-brands fa-adobe cl-icon text-red"></i><span class="cl-name">Adobe</span></div>
+      <div class="client-logo"><i class="fa-brands fa-aws cl-icon icon-aws-color"></i><span class="cl-name">AWS</span></div>
+      <div class="client-logo"><i class="fa-brands fa-hubspot cl-icon icon-hubspot"></i><span class="cl-name">HubSpot</span></div>
+    </div>
+  </div>
+</div>    
+<!-- ═══ STATS BAND ═══ -->
+<div class="stats-band">
+  <div class="stats-band-grid">
+    <div class="sb-item reveal">
+      <div class="sb-num"><span data-count="10000">0</span>+</div>
+      <div class="sb-label">Projects Delivered</div>
+    </div>
+    <div class="sb-item reveal">
+      <div class="sb-num"><span data-count="500">0</span>+</div>
+      <div class="sb-label">Happy Clients</div>
+    </div>
+    <div class="sb-item reveal">
+      <div class="sb-num"><span data-count="25">0</span>+</div>
+      <div class="sb-label">Countries Served</div>
+    </div>
+    <div class="sb-item reveal">
+      <div class="sb-num"><span data-count="97">0</span>%</div>
+      <div class="sb-label">Client Satisfaction</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section">
+  <div class="container">
+    <div class="flex-space-between-35">
+      <div>
+        <div class="section-label reveal"><i class="fa-solid fa-circle-dot"></i> What We Build</div>
+        <h2 class="section-title reveal">Services Engineered<br>for <span>Real Growth</span></h2>
+      </div>
+      <a href="services.html" class="btn btn-secondary reveal"><i class="fa-solid fa-grid-2"></i> All Services</a>
+    </div>
+    <div class="svc-grid-v2">
+
+      <a href="services/web-development.html" class="svc-card-v2 reveal">
+        <div class="svc-card-img"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&q=70" alt="Web Development" loading="lazy"><div class="svc-card-img-overlay"></div></div>
+        <div class="svc-num">01</div>
+        <div class="svc-icon-v2 badge-indigo"><i class="fa-solid fa-code"></i></div>
+        <div class="svc-name-v2">Web Development</div>
+        <div class="svc-desc-v2">High-performance websites &amp; web apps built with React, Next.js, and Laravel. Fast, secure, and built to convert.</div>
+        <div class="svc-tags"><span class="svc-tag-pill">React</span><span class="svc-tag-pill">Next.js</span><span class="svc-tag-pill">Laravel</span></div>
+        <div class="svc-arrow">Explore Service <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="services/mobile-app.html" class="svc-card-v2 reveal">
+        <div class="svc-card-img"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&q=70" alt="Mobile App" loading="lazy"><div class="svc-card-img-overlay"></div></div>
+        <div class="svc-num">02</div>
+        <div class="svc-icon-v2 badge-success-2"><i class="fa-solid fa-mobile-screen"></i></div>
+        <div class="svc-name-v2">Mobile App Development</div>
+        <div class="svc-desc-v2">iOS &amp; Android apps users love. Flutter and React Native solutions delivered fast, with full App Store support.</div>
+        <div class="svc-tags"><span class="svc-tag-pill">Flutter</span><span class="svc-tag-pill">React Native</span><span class="svc-tag-pill">Swift</span></div>
+        <div class="svc-arrow">Explore Service <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="services/web-design.html" class="svc-card-v2 reveal">
+        <div class="svc-card-img"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format&q=70" alt="UI/UX Design" loading="lazy"><div class="svc-card-img-overlay"></div></div>
+        <div class="svc-num">03</div>
+        <div class="svc-icon-v2 badge-orange"><i class="fa-solid fa-pen-ruler"></i></div>
+        <div class="svc-name-v2">UI/UX Design</div>
+        <div class="svc-desc-v2">Human-centred design that converts. Figma prototypes, design systems, and pixel-perfect interfaces that delight users.</div>
+        <div class="svc-tags"><span class="svc-tag-pill">Figma</span><span class="svc-tag-pill">Design Systems</span><span class="svc-tag-pill">Prototyping</span></div>
+        <div class="svc-arrow">Explore Service <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="services/ecommerce.html" class="svc-card-v2 reveal">
+        <div class="svc-card-img"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&q=70" alt="E-Commerce" loading="lazy"><div class="svc-card-img-overlay"></div></div>
+        <div class="svc-num">04</div>
+        <div class="svc-icon-v2 badge-purple"><i class="fa-solid fa-bag-shopping"></i></div>
+        <div class="svc-name-v2">E-Commerce Development</div>
+        <div class="svc-desc-v2">High-converting stores on Shopify, WooCommerce, and custom platforms. Sell globally with flawless checkout UX.</div>
+        <div class="svc-tags"><span class="svc-tag-pill">Shopify</span><span class="svc-tag-pill">WooCommerce</span><span class="svc-tag-pill">Custom</span></div>
+        <div class="svc-arrow">Explore Service <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="services/seo.html" class="svc-card-v2 reveal">
+        <div class="svc-card-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&q=70" alt="SEO & Marketing" loading="lazy"><div class="svc-card-img-overlay"></div></div>
+        <div class="svc-num">05</div>
+        <div class="svc-icon-v2 badge-success"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="svc-name-v2">SEO &amp; Digital Marketing</div>
+        <div class="svc-desc-v2">Data-driven SEO, PPC, and social campaigns that drive qualified traffic and deliver measurable ROI every month.</div>
+        <div class="svc-tags"><span class="svc-tag-pill">SEO</span><span class="svc-tag-pill">Google Ads</span><span class="svc-tag-pill">Analytics</span></div>
+        <div class="svc-arrow">Explore Service <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="services/branding.html" class="svc-card-v2 reveal">
+        <div class="svc-card-img"><img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=600&auto=format&q=70" alt="Branding" loading="lazy"><div class="svc-card-img-overlay"></div></div>
+        <div class="svc-num">06</div>
+        <div class="svc-icon-v2 badge-red-pale"><i class="fa-solid fa-palette"></i></div>
+        <div class="svc-name-v2">Branding &amp; Identity</div>
+        <div class="svc-desc-v2">Strategic brands that stand out. Logo design, brand guidelines, and visual systems that tell your authentic story.</div>
+        <div class="svc-tags"><span class="svc-tag-pill">Logo Design</span><span class="svc-tag-pill">Brand Guide</span><span class="svc-tag-pill">Identity</span></div>
+        <div class="svc-arrow">Explore Service <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY AVOLOGY ═══ -->
+<section class="why-v2">
+  <div class="why-v2-inner">
+    <div class="reveal-left">
+      <div class="section-label mb-1"><i class="fa-solid fa-circle-dot"></i> Why Choose Avology</div>
+      <h2 class="section-title mb-5q">We Don't Just Build.<br>We <span>Transform.</span></h2>
+      <p class="section-subtitle mb-2">Every pixel, every line of code, every strategy — delivered with precision that shows in your results.</p>
+      <div class="flex-col-mb-25">
+        <div class="why-feat">
+          <div class="why-feat-icon"><i class="fa-solid fa-medal text-primary"></i></div>
+          <div>
+            <div class="why-feat-title">10+ Years of Expertise</div>
+            <div class="why-feat-desc">A decade delivering world-class solutions across industries and geographies — with a track record you can verify.</div>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon"><i class="fa-solid fa-users text-primary"></i></div>
+          <div>
+            <div class="why-feat-title">Dedicated Project Teams</div>
+            <div class="why-feat-desc">Your own PM, designers, developers, and QA engineers — not shared, not outsourced. 100% focused on you.</div>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon"><i class="fa-solid fa-lock text-primary"></i></div>
+          <div>
+            <div class="why-feat-title">NDA &amp; IP Protection</div>
+            <div class="why-feat-desc">Your ideas stay yours. We sign NDAs before every project discussion — no exceptions.</div>
+          </div>
+        </div>
+        <div class="why-feat">
+          <div class="why-feat-icon"><i class="fa-solid fa-clock text-primary"></i></div>
+          <div>
+            <div class="why-feat-title">On-Time, On-Budget</div>
+            <div class="why-feat-desc">Transparent timelines, no hidden fees, and a 97% on-time delivery rate backed by Agile sprints.</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-wrap-gap-1">
+        <a href="about.html" class="btn btn-primary"><i class="fa-solid fa-users"></i> Meet the Team</a>
+        <a href="quote.html" class="btn btn-secondary"><i class="fa-solid fa-file-invoice"></i> Get Free Quote</a>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="why-right-grid">
+        <div class="why-stat-card">
+          <div class="wsc-num">10K+</div>
+          <div class="wsc-label">Projects Completed</div>
+          <div class="wsc-icon"><i class="fa-solid fa-rocket"></i></div>
+        </div>
+        <div class="why-stat-card">
+          <div class="wsc-num">97%</div>
+          <div class="wsc-label">Client Satisfaction</div>
+          <div class="wsc-icon"><i class="fa-solid fa-heart"></i></div>
+        </div>
+        <div class="why-stat-card">
+          <div class="wsc-num">500+</div>
+          <div class="wsc-label">Global Clients</div>
+          <div class="wsc-icon"><i class="fa-solid fa-globe"></i></div>
+        </div>
+        <div class="why-stat-card">
+          <div class="wsc-num">10+</div>
+          <div class="wsc-label">Years of Excellence</div>
+          <div class="wsc-icon"><i class="fa-solid fa-medal"></i></div>
+        </div>
+      </div>
+      <!-- Award badges -->
+      <div class="grid-2-mt-125">
+        <div class="card-bg2-center">
+          <div class="icon-amber-2rem"><i class="fa-solid fa-trophy"></i></div>
+          <div class="item-title-875">Award Winning</div>
+          <div class="text-75-muted">Excellence in Digital</div>
+        </div>
+        <div class="card-bg2-center">
+          <div class="icon-blue-2rem"><i class="fa-brands fa-google"></i></div>
+          <div class="item-title-875">4.9★ Google</div>
+          <div class="text-75-muted">Verified Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PORTFOLIO BENTO ═══ -->
+<section class="section badge-bg2">
+  <div class="container">
+    <div class="flex-space-between">
+      <div>
+        <div class="section-label reveal"><i class="fa-solid fa-circle-dot"></i> Our Work</div>
+        <h2 class="section-title reveal">Selected <span>Case Studies</span></h2>
+      </div>
+      <a href="portfolio.html" class="btn btn-secondary reveal"><i class="fa-solid fa-arrow-right"></i> All Projects</a>
+    </div>
+    <div class="bento-grid reveal">
+      <div class="bento-item span2">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&q=75" alt="Enterprise Platform" loading="lazy">
+        <div class="bento-overlay"></div>
+        <div class="bento-info">
+          <div class="bento-cat"><i class="fa-solid fa-code"></i> Web Development</div>
+          <div class="bento-title">Enterprise SaaS Platform — 340% Traffic Growth</div>
+        </div>
+        <div class="bento-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+      <div class="bento-item tall">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&q=75" alt="Mobile App" loading="lazy" class="min-h-full">
+        <div class="bento-overlay"></div>
+        <div class="bento-info">
+          <div class="bento-cat"><i class="fa-solid fa-mobile-screen"></i> Mobile App</div>
+          <div class="bento-title">HealthTrack — 50K Active Users</div>
+        </div>
+        <div class="bento-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+      <div class="bento-item">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&auto=format&q=75" alt="UI Design" loading="lazy">
+        <div class="bento-overlay"></div>
+        <div class="bento-info">
+          <div class="bento-cat"><i class="fa-solid fa-pen-ruler"></i> UI/UX Design</div>
+          <div class="bento-title">SaaS Dashboard Redesign</div>
+        </div>
+        <div class="bento-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+      <div class="bento-item">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&auto=format&q=75" alt="E-Commerce" loading="lazy">
+        <div class="bento-overlay"></div>
+        <div class="bento-info">
+          <div class="bento-cat"><i class="fa-solid fa-bag-shopping"></i> E-Commerce</div>
+          <div class="bento-title">Fashion Store — 2.8× Conversion Lift</div>
+        </div>
+        <div class="bento-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section class="process-new">
+  <div class="process-new-bg"></div>
+  <div class="process-new-grid"></div>
+  <div class="container z1">
+    <div class="sec-head-xl">
+      <div class="section-label reveal sec-mb-1"><i class="fa-solid fa-circle-dot"></i> How We Work</div>
+      <h2 class="section-title reveal text-white-mb">From Idea to Launch in <span>5 Steps</span></h2>
+      <p class="section-subtitle reveal text-white-faint">A transparent, agile workflow that keeps you in control at every stage.</p>
+    </div>
+    <div class="process-chain">
+      <div class="pc-step reveal">
+        <div class="pc-num-wrap">
+          <div class="pc-circle"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="pc-num">01</div>
+        </div>
+        <div class="pc-title">Discovery</div>
+        <div class="pc-desc">Deep-dive into your goals, audience, and market to build a winning strategy.</div>
+      </div>
+      <div class="pc-step reveal">
+        <div class="pc-num-wrap">
+          <div class="pc-circle"><i class="fa-solid fa-compass-drafting"></i></div>
+          <div class="pc-num">02</div>
+        </div>
+        <div class="pc-title">Strategy</div>
+        <div class="pc-desc">Define scope, tech stack, timelines, and a clear, measurable roadmap.</div>
+      </div>
+      <div class="pc-step reveal">
+        <div class="pc-num-wrap">
+          <div class="pc-circle"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="pc-num">03</div>
+        </div>
+        <div class="pc-title">Design</div>
+        <div class="pc-desc">High-fidelity UI/UX prototypes approved before a single line of code.</div>
+      </div>
+      <div class="pc-step reveal">
+        <div class="pc-num-wrap">
+          <div class="pc-circle"><i class="fa-solid fa-terminal"></i></div>
+          <div class="pc-num">04</div>
+        </div>
+        <div class="pc-title">Build</div>
+        <div class="pc-desc">Agile sprints with weekly demos, live previews, and constant communication.</div>
+      </div>
+      <div class="pc-step reveal">
+        <div class="pc-num-wrap">
+          <div class="pc-circle"><i class="fa-solid fa-rocket"></i></div>
+          <div class="pc-num">05</div>
+        </div>
+        <div class="pc-title">Launch</div>
+        <div class="pc-desc">QA tested, optimised, and live — with ongoing support included.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECH ICONS ═══ -->
+<section class="tech-showcase">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-solid fa-microchip"></i> Our Tech Stack</div>
+      <h2 class="section-title reveal">Built With the <span>Best Tools</span></h2>
+      <p class="section-subtitle reveal mt-center-75">Battle-tested technologies chosen for performance, scalability, and developer experience.</p>
+    </div>
+    <div class="tech-icons-grid reveal">
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-react icon-react"></i></span><div class="ti-name">React</div></div>
+      <div class="ti-item"><span class="ti-icon icon-brand-black">N</span><div class="ti-name">Next.js</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-node-js icon-node"></i></span><div class="ti-name">Node.js</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-solid fa-layer-group icon-flutter"></i></span><div class="ti-name">Flutter</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-aws icon-aws"></i></span><div class="ti-name">AWS</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-python icon-python"></i></span><div class="ti-name">Python</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-docker icon-docker"></i></span><div class="ti-name">Docker</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-figma icon-figma"></i></span><div class="ti-name">Figma</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-php icon-php"></i></span><div class="ti-name">Laravel</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-vuejs icon-vue"></i></span><div class="ti-name">Vue.js</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-shopify icon-shopify"></i></span><div class="ti-name">Shopify</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-wordpress icon-wordpress"></i></span><div class="ti-name">WordPress</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-apple text-muted-18"></i></span><div class="ti-name">Swift</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-android icon-android"></i></span><div class="ti-name">Kotlin</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-brands fa-stripe icon-stripe"></i></span><div class="ti-name">Stripe</div></div>
+      <div class="ti-item"><span class="ti-icon"><i class="fa-solid fa-fire icon-firebase"></i></span><div class="ti-name">Firebase</div></div>
+    </div>
+    <div class="sec-head-mt reveal">
+      <a href="technologies.html" class="btn btn-secondary"><i class="fa-solid fa-microchip"></i> View Full Tech Stack</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="testi-new-section">
+  <div class="container">
+    <div class="tn-head reveal">
+      <div class="tn-label"><i class="fa-solid fa-star"></i> Client Testimonials</div>
+      <h2 class="tn-title">500+ Businesses Trust <span>Avology</span></h2>
+      <div class="tn-ratings-row">
+        <div class="tn-rating-chip"><span class="stars">★★★★★</span><strong>4.9</strong> Google Reviews</div>
+        <div class="tn-rating-sep"></div>
+        <div class="tn-rating-chip"><span class="stars">★★★★★</span><strong>4.8</strong> Clutch.co</div>
+        <div class="tn-rating-sep"></div>
+        <div class="tn-rating-chip"><span class="stars">★★★★★</span><strong>5.0</strong> GoodFirms</div>
+      </div>
+    </div>
+
+    <div class="tn-carousel-wrap reveal">
+      <div class="tn-slider-overflow">
+        <div class="tn-track" id="tnTrack">
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="Sarah Mitchell" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">Sarah Mitchell</div>
+                  <div class="tn-author-role">CEO, TechVenture Ltd. · UK</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">Avology completely transformed our digital presence. Website traffic increased by 340% in just 6 months. They executed flawlessly from day one.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-arrow-trend-up"></i> +340% Traffic</div>
+                <div class="tn-platform-badge"><i class="fa-brands fa-google"></i> Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="Rahul Sharma" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">Rahul Sharma</div>
+                  <div class="tn-author-role">Founder, HealthApp · India</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">The mobile app they built has over 50,000 active users. They understood our vision perfectly and delivered beyond all expectations. Outstanding team.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-users"></i> 50K+ Users</div>
+                <div class="tn-platform-badge"><i class="fa-solid fa-award"></i> Clutch.co</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="Alex Thompson" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">Alex Thompson</div>
+                  <div class="tn-author-role">Director, StyleHouse · UK</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">Outstanding e-commerce work. Conversion rates improved by 2.8× after the redesign. The new store pays for itself every week. Best investment this year.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-chart-line"></i> 2.8× Conversions</div>
+                <div class="tn-platform-badge"><i class="fa-solid fa-star"></i> GoodFirms</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="Priya Nair" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">Priya Nair</div>
+                  <div class="tn-author-role">Marketing Head, GlobalEdge · SG</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">SEO team helped us rank on page 1 for 50+ competitive keywords in 8 months. The ROI on their digital marketing services is absolutely phenomenal.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> 50+ Keywords</div>
+                <div class="tn-platform-badge"><i class="fa-brands fa-google"></i> Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="Michael Chen" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">Michael Chen</div>
+                  <div class="tn-author-role">CPO, Finova Technologies · SG</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">The UI/UX redesign reduced our customer churn by 28%. The Avology team are genuine experts who bring ideas to the table — not just execute orders.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-arrow-trend-down"></i> -28% Churn</div>
+                <div class="tn-platform-badge"><i class="fa-solid fa-award"></i> Clutch.co</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="David Okonkwo" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">David Okonkwo</div>
+                  <div class="tn-author-role">CTO, Buildwise · Lagos</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">Delivered our entire platform in 14 weeks — on budget, zero bugs at launch. Their communication is impeccable. We're on our 4th project with them now.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-clock"></i> 14 Weeks</div>
+                <div class="tn-platform-badge"><i class="fa-solid fa-star"></i> GoodFirms</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-slide">
+            <div class="tn-card">
+              <div class="tn-card-top">
+                <div class="tn-card-photo"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop&crop=faces&auto=format&q=80" alt="Neha Kapoor" loading="lazy"></div>
+                <div class="tn-card-meta">
+                  <div class="tn-author-name">Neha Kapoor</div>
+                  <div class="tn-author-role">CTO, FinPulse · Bangalore</div>
+                  <div class="tn-stars-row">★★★★★</div>
+                </div>
+              </div>
+              <div class="tn-quote-mark">"</div>
+              <p class="tn-quote-text">Our FinTech platform went from idea to 10,000 users in 90 days. Avology moved fast without cutting corners — security and performance were never compromised.</p>
+              <div class="tn-card-footer">
+                <div class="tn-result-badge"><i class="fa-solid fa-bolt"></i> 10K Users / 90 Days</div>
+                <div class="tn-platform-badge"><i class="fa-brands fa-google"></i> Google</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tn-track -->
+      </div><!-- /tn-slider-overflow -->
+
+      <div class="tn-controls">
+        <button class="tn-btn" id="tnPrev" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="tn-dots" id="tnDots"></div>
+        <button class="tn-btn" id="tnNext" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div><!-- /tn-carousel-wrap -->
+
+    <div class="tn-bottom reveal">
+      <div class="text-center">
+        <div class="tn-stat-num">500+</div>
+        <div class="tn-stat-label">Happy Clients</div>
+      </div>
+      <div class="tn-stat-sep"></div>
+      <div class="text-center">
+        <div class="tn-stat-num">25+</div>
+        <div class="tn-stat-label">Countries Served</div>
+      </div>
+      <div class="tn-stat-sep"></div>
+      <div class="text-center">
+        <div class="tn-stat-num">97%</div>
+        <div class="tn-stat-label">Satisfaction Rate</div>
+      </div>
+      <div class="tn-stat-sep"></div>
+      <div class="text-center">
+        <div class="tn-stat-num">4.9 ★</div>
+        <div class="tn-stat-label">Average Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VIDEO TESTIMONIALS ═══ -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="section-label reveal label-center"><i class="fa-brands fa-youtube"></i> Video Reviews</div>
+      <h2 class="section-title reveal">Hear It From Our <span>Clients</span></h2>
+    </div>
+    <div class="grid-3">
+      <a href="https://www.youtube.com/watch?v=Rygv4n2H7hU" target="_blank" class="video-card reveal">
+        <div class="video-thumb">
+          <img src="assets/images/yt-thumb-1.jpg" alt="Client Review" loading="lazy">
+          <div class="play-btn"><div class="play-btn-circle"><i class="fa-solid fa-play"></i></div></div>
+        </div>
+        <div class="video-info">
+          <div class="video-info-name">Client Success Story</div>
+          <div class="video-info-role"><i class="fa-brands fa-youtube text-red"></i> Watch on YouTube</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=PVmYwW4C23I" target="_blank" class="video-card reveal">
+        <div class="video-thumb">
+          <img src="assets/images/yt-thumb-2.jpg" alt="Client Review" loading="lazy">
+          <div class="play-btn"><div class="play-btn-circle"><i class="fa-solid fa-play"></i></div></div>
+        </div>
+        <div class="video-info">
+          <div class="video-info-name">Project Case Study</div>
+          <div class="video-info-role"><i class="fa-brands fa-youtube text-red"></i> Watch on YouTube</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=McIzZqLYSaM" target="_blank" class="video-card reveal">
+        <div class="video-thumb">
+          <img src="assets/images/yt-thumb-3.jpg" alt="About Avology" loading="lazy">
+          <div class="play-btn"><div class="play-btn-circle"><i class="fa-solid fa-play"></i></div></div>
+        </div>
+        <div class="video-info">
+          <div class="video-info-name">About Avology Technologies</div>
+          <div class="video-info-role"><i class="fa-brands fa-youtube text-red"></i> Watch on YouTube</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ CTA v2 ═══ -->
+<section class="cta-v2">
+  <div class="cta-v2-inner">
+    <div class="cta-v2-blob"></div>
+    <div class="cta-v2-content reveal">
+      <div class="cta-v2-label"><i class="fa-solid fa-bolt"></i> Ready to Start?</div>
+      <h2 class="cta-v2-title">Let's Build Something<br><span>Extraordinary</span></h2>
+      <p class="cta-v2-sub">Turn your idea into a digital product that stands out, scales fast, and delivers real ROI. Free consultation — no commitment required.</p>
+      <div class="cta-v2-btns">
+        <a href="quote.html" class="cta-btn-white"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+        <a href="contact.html" class="cta-btn-outline"><i class="fa-solid fa-calendar-check"></i> Schedule a Call</a>
+      </div>
+      <div class="cta-v2-badges">
+        <div class="cta-v2-badge"><i class="fa-solid fa-circle-check"></i> Free Consultation</div>
+        <div class="cta-v2-badge"><i class="fa-solid fa-shield-halved"></i> NDA Signed Upfront</div>
+        <div class="cta-v2-badge"><i class="fa-solid fa-bolt"></i> 48h Response</div>
+        <div class="cta-v2-badge"><i class="fa-solid fa-clock"></i> 97% On-Time Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html"><img src="assets/images/logo-white.png" alt="Avology Technologies" class="footer-logo" onerror="this.src='assets/images/logo.png'"></a>
+        <p class="footer-tagline">Smart Code. Human Design. Scalable Impact. We build digital products that help businesses grow globally.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/avology" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/avologypro" target="_blank" class="footer-social" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/avologytechnologies" target="_blank" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@avologypro" target="_blank" class="footer-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/918219658223" target="_blank" class="footer-social" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services/web-development.html"><i class="fa-solid fa-angle-right"></i> Web Development</a></li>
+          <li><a href="services/mobile-app.html"><i class="fa-solid fa-angle-right"></i> Mobile App</a></li>
+          <li><a href="services/web-design.html"><i class="fa-solid fa-angle-right"></i> UI/UX Design</a></li>
+          <li><a href="services/ecommerce.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="services/seo.html"><i class="fa-solid fa-angle-right"></i> SEO &amp; Marketing</a></li>
+          <li><a href="services/branding.html"><i class="fa-solid fa-angle-right"></i> Branding</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-angle-right"></i> Portfolio</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-angle-right"></i> Careers</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          <li><a href="quote.html"><i class="fa-solid fa-angle-right"></i> Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Industries</div>
+        <ul class="footer-links">
+          <li><a href="industries/healthcare.html"><i class="fa-solid fa-angle-right"></i> Healthcare</a></li>
+          <li><a href="industries/fintech.html"><i class="fa-solid fa-angle-right"></i> Fintech</a></li>
+          <li><a href="industries/education.html"><i class="fa-solid fa-angle-right"></i> Education</a></li>
+          <li><a href="industries/retail.html"><i class="fa-solid fa-angle-right"></i> Retail</a></li>
+          <li><a href="industries.html"><i class="fa-solid fa-angle-right"></i> E-Commerce</a></li>
+          <li><a href="industries.html"><i class="fa-solid fa-angle-right"></i> Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Get In Touch</div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="footer-contact-text">Plot No. C, 127, Phase-8, Industrial Area, Sector 73, SAS Nagar, Punjab 160071</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="footer-contact-text"><a href="tel:+918219658223">+91 82-196-582-23</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="footer-contact-text"><a href="mailto:contact@avologypro.com">contact@avologypro.com</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="footer-contact-text">Mon–Fri, 10:00 AM – 7:00 PM IST</div>
+        </div>
+        <div class="mt-5q">
+          <a href="quote.html" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-paper-plane"></i> Start a Project
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&#169; 2026 Avology Technologies Pvt. Ltd. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── HERO PARALLAX ──
+(function(){
+  var heroBg = document.getElementById('heroBg');
+  if(!heroBg) return;
+  var heroEl = document.getElementById('hero');
+  function onScroll(){
+    var s = window.scrollY;
+    var heroH = heroEl ? heroEl.offsetHeight : window.innerHeight;
+    if(s > heroH) return; // stop updating below the fold
+    heroBg.style.transform = 'translateY(' + (s * 0.38) + 'px)';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+})();
+
+// Animate hero orbs on scroll
+window.addEventListener('scroll',function(){
+  var s = window.scrollY;
+  document.querySelectorAll('.hero-orb-new').forEach(function(o,i){
+    o.style.transform = 'translateY(' + (s * (0.08 + i*0.04)) + 'px)';
+  });
+},{passive:true});
+
+// ── NEW TESTIMONIAL CAROUSEL (3 visible) ──
+(function(){
+  var track = document.getElementById('tnTrack');
+  var dotsWrap = document.getElementById('tnDots');
+  var prevBtn = document.getElementById('tnPrev');
+  var nextBtn = document.getElementById('tnNext');
+  if(!track) return;
+  var slides = Array.from(track.children);
+  var current = 0, timer;
+  var GAP = 24; // matches 1.5rem gap
+
+  function visible(){
+    var w = track.parentElement.offsetWidth;
+    if(w < 640) return 1;
+    if(w < 1000) return 2;
+    return 3;
+  }
+
+  function maxIndex(){ return Math.max(0, slides.length - visible()); }
+
+  function cardWidth(){
+    var v = visible();
+    var wrap = track.parentElement.offsetWidth;
+    return (wrap - GAP * (v - 1)) / v;
+  }
+
+  function render(){
+    var cw = cardWidth();
+    // set each slide flex-basis explicitly
+    slides.forEach(function(s){ s.style.flex = '0 0 ' + cw + 'px'; });
+    track.style.transform = 'translateX(-' + (current * (cw + GAP)) + 'px)';
+    // dots: one per scroll position
+    var dots = dotsWrap ? dotsWrap.querySelectorAll('.tn-dot') : [];
+    dots.forEach(function(d,i){ d.classList.toggle('active', i===current); });
+  }
+
+  function buildDots(){
+    if(!dotsWrap) return;
+    dotsWrap.innerHTML = '';
+    var total = maxIndex() + 1;
+    for(var i=0;i<total;i++){
+      (function(idx){
+        var d = document.createElement('button');
+        d.className = 'tn-dot' + (idx===0?' active':'');
+        d.addEventListener('click', function(){ current=idx; render(); resetTimer(); });
+        dotsWrap.appendChild(d);
+      })(i);
+    }
+  }
+
+  function go(dir){
+    var max = maxIndex();
+    current = dir > 0
+      ? (current >= max ? 0 : current+1)
+      : (current <= 0 ? max : current-1);
+    render(); resetTimer();
+  }
+
+  function resetTimer(){ clearInterval(timer); timer = setInterval(function(){ go(1); }, 5500); }
+
+  if(prevBtn) prevBtn.addEventListener('click', function(){ go(-1); });
+  if(nextBtn) nextBtn.addEventListener('click', function(){ go(1); });
+
+  var startX = 0;
+  track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', function(e){
+    var diff = startX - e.changedTouches[0].clientX;
+    if(Math.abs(diff) > 45) go(diff > 0 ? 1 : -1);
+  });
+
+  var deb;
+  window.addEventListener('resize', function(){
+    clearTimeout(deb);
+    deb = setTimeout(function(){ buildDots(); render(); }, 150);
+  }, {passive:true});
+
+  buildDots(); render(); resetTimer();
+})();
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
