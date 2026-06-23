@@ -974,10 +974,12 @@ a { text-decoration: none; }
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin: 0 clamp(1.25rem,5%,3rem) clamp(3rem,5vw,5rem);
-    max-width: calc(100% - 40px);
+    /*margin: 0 clamp(1.25rem,5%,3rem) clamp(3rem,5vw,5rem);*/
+    width: calc(100% - 40px);
     margin-left: auto!important;
     margin-right: auto!important;
+    max-width: 1240px;
+    margin: 70px auto;
 }
 /* animated background elements */
 .cta-banner::before {
